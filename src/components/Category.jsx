@@ -121,11 +121,11 @@ const Category = ({ setVideoDeleteResponseCategory,videoDeleteResponseFromView})
 
   }
 
-  const draggingStartedCategory = (e, draggingVideoDetails,categoryDetails) => {
+  const draggingStartedCategory = (e, draggingVideoDetails,category) => {
 
     console.log("dragging started", draggingVideoDetails)
 
-    let dragData = {video:draggingVideoDetails,categoryDetails}
+    let dragData = {video:draggingVideoDetails,category}
     e.dataTransfer.setData("dragData", JSON.stringify(dragData))
   }
   return (

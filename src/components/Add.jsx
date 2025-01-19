@@ -63,7 +63,7 @@ const Add = ({setAddResponse}) => {
 
     }else{
       setInvalidYtLink(true)
-      setVideoDetails({...setVideoDetails,ytLink:""})
+      setVideoDetails({...VideoDetails,ytLink:""})
     }
 
   }
